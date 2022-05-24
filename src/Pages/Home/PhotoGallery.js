@@ -13,7 +13,7 @@ const PhotoGallery = () => {
     return (
         <div>
             <div className='bg-slate-300 px-3' >
-                <h1 className='text-center p-4 text-success'>Photo Gallery</h1><div className="container mt-5">
+                <h1 className='text-center p-4 text-green-800 text-4xl'>Photo Gallery</h1><div className="container mt-5">
                     <div className="row">
                         <div className="col-4">
                             <div className="row">

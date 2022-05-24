@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../Shared/Navbar/Footer';
+import Footer from '../Shared/Footer';
 import Banner from './Banner/Banner';
 import Contact from './Contact';
 import PhotoGallery from './PhotoGallery';
