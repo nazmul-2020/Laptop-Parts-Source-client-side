@@ -2,12 +2,12 @@ import React, { useRef } from 'react';
 import { Button, Form,  } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import auth from '../../../../firebase.init';
-import Loading from '../../Shared/Loading/Loading';
 import './Login.css'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import SocialLogin from '../../../SocialLogin/SocialLogin';
+import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
     const emailRef = useRef('')
