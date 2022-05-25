@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ProductsInfo = ({ product }) => {
-    console.log(product.minimumOrderQuantity);
     const { name, description, img, minimumOrderQuantity, price, availableQuantity } = product
+
     return (
 
         <div class="card card-compact w-96 bg-base-100 shadow-xl my-5">
@@ -14,7 +15,7 @@ const ProductsInfo = ({ product }) => {
                 <p className=''>Available Quantity:{availableQuantity}</p>
                 <p>price:{price}</p>
                 <div class="card-actions justify-center">
-                    <button class="btn btn-primary">Buy Now</button>
+                    <button class="btn btn-primary"><Link to='/purchase'>Buy Now</Link></button>
                 </div>
             </div>
         </div>
