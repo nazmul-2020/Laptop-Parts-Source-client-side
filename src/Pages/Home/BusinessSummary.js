@@ -5,7 +5,7 @@ const BusinessSummary = () => {
     <div className='mx-6 my-4'>
       <h1 className='text-center text-4xl my-3'>Business Summary</h1>
       <div class="flex">
-        <div class="stats stats-vertical w-full lg:stats-horizontal shadow">
+        <div class="stats stats-vertical w-full lg:stats-horizontal shadow text-center">
 
           <div class="stat">
             <div class="stat-title">Page Views</div>

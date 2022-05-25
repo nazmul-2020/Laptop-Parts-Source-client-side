@@ -8,6 +8,9 @@ import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login/Login";
 import SignUp from "./Pages/Login/SignUp/SignUp";
 import RequireAuth from "./Pages/Shared/RequireAuth";
+import Dashboard from "./Pages/Dashboard/Dashboard";
+import MyPortfolio from "./Pages/MyPortfolio/MyPortfolio";
+import Blog from "./Pages/Blog/Blog";
 
 
 function App() {
@@ -17,6 +20,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/purchase" element={<RequireAuth><Purchase></Purchase></RequireAuth>}></Route>
+        <Route path="/dashboard" element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}></Route>
+        <Route path="/myPortfolio" element={<MyPortfolio></MyPortfolio>}></Route>
+        <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signUp" element={<SignUp></SignUp>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
