@@ -28,7 +28,7 @@ const AddProduct = () => {
 
     return (
         <div className='m-5  mx-auto p-4 shadow-lg form-container '>
-            <h3 className='text-center text-dark'> Please Add Item</h3>
+            <h3 className='text-center text-2xl mb-2 '> Please Add Product</h3>
             <Form onSubmit={handleSubmit(onSubmit)}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
 
