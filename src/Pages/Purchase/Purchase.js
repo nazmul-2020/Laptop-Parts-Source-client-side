@@ -3,7 +3,7 @@ import React from 'react';
 const Purchase = () => {
     return (
         <div>
-            <h1>Purchase.js</h1>
+            <h1 className='text-center '>Purchases</h1>
         </div>
     );
 };

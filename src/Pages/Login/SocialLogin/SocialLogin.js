@@ -21,7 +21,7 @@ const SocialLogin = () => {
 
     if (user) {
         return (
-            navigate('/home')
+            navigate('/')
         );
     }
 
@@ -36,7 +36,7 @@ const SocialLogin = () => {
             <div>
                 <div className=''>
                     <button onClick={() => signInWithGoogle()} className='btn  w-75 text-white mx-auto d-block my-3 bg-primary'>
-                        <span className='px-2'>Google Sign In</span>
+                        <span className='px-2'>CONTINUE WITH GOOGLE</span>
                     </button>
 
                 </div>

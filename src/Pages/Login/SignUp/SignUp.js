@@ -26,7 +26,7 @@ const SignUp = () => {
     }
 
     if(user){
-        navigate('/home')
+        navigate('/')
     }
 
     const handelSignUp = event => {

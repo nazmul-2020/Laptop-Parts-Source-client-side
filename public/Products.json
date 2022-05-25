@@ -1,0 +1,38 @@
+[
+    {
+        "_id": "1",
+        "name": "KeyBoard",
+        "description": "The Honda SP 125 is powered by a 124 cc air-cooled engine which produces of power. It has a fuel tank of 11 L and a . The Honda SP 125 starts at ",
+        "minimumOrderQuantity": 20,
+        "availableQuantity": 60,
+        "price": 200,
+        "img": "https://i.ibb.co/k09nGHF/g2.jpg"
+    },
+    {
+        "_id": "2",
+        "name": "MotherBoard",
+        "description": "The Honda SP 125 is powered by a 124 cc air-cooled engine which produces of power. It has a fuel tank of 11 L and a . The Honda SP 125 starts at ",
+        "minimumOrderQuantity": 20,
+        "availableQuantity": 60,
+        "price": 200,
+        "img": "https://i.ibb.co/125WcdK/g-4.jpg"
+    },
+    {
+        "_id": "3",
+        "name": "RAM",
+        "description": "The Honda SP 125 is powered by a 124 cc air-cooled engine which produces of power. It has a fuel tank of 11 L and a . The Honda SP 125 starts at ",
+        "minimumOrderQuantity": 20,
+        "availableQuantity": 60,
+        "price": 200,
+        "img": "https://i.ibb.co/7XpSWMd/g7.jpg"
+    },
+    {
+        "_id": "4",
+        "name": "HDD",
+        "description": "The Honda SP 125 is powered by a 124 cc air-cooled engine which produces of power. It has a fuel tank of 11 L and a . The Honda SP 125 starts at ",
+        "minimumOrderQuantity": 20,
+        "availableQuantity": 60,
+        "price": 200,
+        "img": "https://i.ibb.co/7p5Cp2d/g8.jpg"
+    }
+]
