@@ -1,49 +1,49 @@
 [
     {
         "name": "Pabel",
-        "review": "Bought many computers over the years, but Dell stands out for quality and longevity. Soon I will buy their Poweredge server, but will wait for the Black Monday discount. All other computers I bought had problems, but Dell is a solid bet.",
+        "reviewText": "Bought many computers over the years, but Dell stands out for quality and longevity. Soon I will buy their Poweredge server, but will wait for the Black Monday discount. All other computers I bought had problems, but Dell is a solid bet.",
         "ratings": 3.5,
         "img": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXQlMjBtYW58ZW58MHx8MHx8&w=1000&q=80"
     },
     {
         "name": "Tanvir",
-        "review": "In two months the system crashed (blue screen) twice while using Dell's update tool. System got buggy after using Dell's recovery tool. Asked for help from support.",
+        "reviewText": "In two months the system crashed (blue screen) twice while using Dell's update tool. System got buggy after using Dell's recovery tool. Asked for help from support.",
         "ratings": 5,
         "img": "https://media.istockphoto.com/photos/young-handsome-man-with-beard-wearing-casual-sweater-standing-over-picture-id1212702108?k=20&m=1212702108&s=612x612&w=0&h=ZI4gKJi2d1dfi74yTljf4YhulA1nfhD3dcUFGH-NUkY="
     },
     {
         "name": "Kobir",
-        "review": "It is horrible. The worst computer I have ever owned. I would not recommend this piece of junk to anyone! It huffs and puffs worse than a COPD patient, freeze, and is just a pain to use. Don't ever buy one. It is a waste of your money!",
+        "reviewText": "It is horrible. The worst computer I have ever owned. I would not recommend this piece of junk to anyone! It huffs and puffs worse than a COPD patient, freeze, and is just a pain to use. Don't ever buy one. It is a waste of your money!",
         "ratings": 2,
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3IuJnfuuMRT9G9sBGQPRRrpBR0XhBK-x_IQ6dgSlb17E07BUJZC50o7rpkmsgvdrcuuU&usqp=CAU"
     },
     {
         "name": "Nazmul",
-        "review": "Dell service will not take any responsibility for device. Worst thing is Dell cannot be trusted. HP services are much better. Even hp devices are more efficient. Dell technicians are either not available or they are not capable enough. I would never prefer to buy a Dell product again. Buying Dell laptop is of no use.",
+        "reviewText": "Dell service will not take any responsibility for device. Worst thing is Dell cannot be trusted. HP services are much better. Even hp devices are more efficient. Dell technicians are either not available or they are not capable enough. I would never prefer to buy a Dell product again. Buying Dell laptop is of no use.",
         "ratings": 4.5,
         "img": "https://www.mantruckandbus.com/fileadmin/_processed_/9/9/csm_e-mobilisierer-interview-kachel_3f68339029.jpg"
     },
     {
         "name": "Sabbir",
-        "review": "Beware of Dell support. I am a tech professional recently retired and getting decent support as a non-business customer is impossible. I purchased the best extended warranty/service Dell has to offer and I am still without a working laptop a month later. At the current pace, it could easily be another month.",
+        "reviewText": "Beware of Dell support. I am a tech professional recently retired and getting decent support as a non-business customer is impossible. I purchased the best extended warranty/service Dell has to offer and I am still without a working laptop a month later. At the current pace, it could easily be another month.",
         "ratings": 2.5,
         "img": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg&ga=GA1.2.1113910933.1639958400"
     },
     {
         "name": "Tasrife",
-        "review": "I would never ever deal with Dell co even if the are the only supplier left in the world. Sales people are liars, technical support not responding, escalation team in tatters even top people. They are busy in social networks not in business.",
+        "reviewText": "I would never ever deal with Dell co even if the are the only supplier left in the world. Sales people are liars, technical support not responding, escalation team in tatters even top people. They are busy in social networks not in business.",
         "ratings": 4,
         "img": "https://image.shutterstock.com/image-photo/cheerful-positive-guy-beard-rejoicing-260nw-1478799818.jpg"
     },
     {
         "name": "Tasrife",
-        "review": "I would never ever deal with Dell co even if the are the only supplier left in the world. Sales people are liars, technical support not responding, escalation team in tatters even top people. They are busy in social networks not in business.",
+        "reviewText": "I would never ever deal with Dell co even if the are the only supplier left in the world. Sales people are liars, technical support not responding, escalation team in tatters even top people. They are busy in social networks not in business.",
         "ratings": 4,
         "img": "https://image.shutterstock.com/image-photo/cheerful-positive-guy-beard-rejoicing-260nw-1478799818.jpg"
     },
     {
         "name": "Tasrife",
-        "review": "I would never ever deal with Dell co even if the are the only supplier left in the world. Sales people are liars, technical support not responding, escalation team in tatters even top people. They are busy in social networks not in business.",
+        "reviewText": "I would never ever deal with Dell co even if the are the only supplier left in the world. Sales people are liars, technical support not responding, escalation team in tatters even top people. They are busy in social networks not in business.",
         "ratings": 4,
         "img": "https://image.shutterstock.com/image-photo/cheerful-positive-guy-beard-rejoicing-260nw-1478799818.jpg"
     }
