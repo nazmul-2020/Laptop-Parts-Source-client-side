@@ -17,6 +17,7 @@ import AddReview from "./Pages/Dashboard/AddReview";
 import ManageOrder from "./Pages/Dashboard/ManageOrder";
 import AddProduct from "./Pages/Dashboard/AddProduct";
 import MakeAdmin from "./Pages/Dashboard/MakeAdmin";
+import ManageProduct from "./Pages/Dashboard/ManageProduct";
 
 
 function App() {
@@ -27,12 +28,13 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/purchase" element={<RequireAuth><Purchase></Purchase></RequireAuth>}></Route>
         <Route path="/dashboard" element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}>
-        <Route index element={<MyOrders></MyOrders>}></Route>
-          <Route path="myProfile" element={<MyProfile></MyProfile>}></Route>
+          <Route index element={<MyProfile></MyProfile>}></Route>
+        <Route path="myOrders" element={<MyOrders></MyOrders>}></Route>
           <Route path="addReview" element={<AddReview></AddReview>}></Route>
           <Route path="manageOrder" element={<ManageOrder></ManageOrder>}></Route>
           <Route path="addProduct" element={<AddProduct></AddProduct>}></Route>
           <Route path="makeAdmin" element={<MakeAdmin></MakeAdmin>}></Route>
+          <Route path="manageProducts" element={<ManageProduct></ManageProduct>}></Route>
         </Route>
         <Route path="/myPortfolio" element={<MyPortfolio></MyPortfolio>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
