@@ -5,15 +5,15 @@ import AdminRow from './AdminRow';
 
 const MakeAdmin = () => {
 
-    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('http://localhost:5000/user').then(res => res.json()))
+    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://intense-earth-81870.herokuapp.com/user').then(res => res.json()))
     if (isLoading) {
         return <Loading />
     }
     return (
         <div className='mt-3'>
             <h1 className='text-center text-2xl'>All User and Admin</h1>
-            <div class="overflow-x-auto">
-                <table class="table w-full">
+            <div className="overflow-x-auto">
+                <table className="table w-full">
                     <thead>
                         <tr className=''>
                             <th>No.</th>

@@ -1,6 +1,6 @@
 # Laptop Parts Source
 
-## Live Website:
+## Live Website: https://laptop-parts-source.web.app/
 
 * Features and Functionality
 * Login and Logout System
