@@ -3,7 +3,6 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { NavLink, Outlet } from 'react-router-dom';
 import Footer from '../Shared/Footer';
 import auth from '../../firebase.init';
-// import useAdmin from '../../hooks/uesAdmin';
 import useAdmin from '../../hooks/useAdmin';
 
 const Dashboard = () => {
@@ -22,7 +21,7 @@ const Dashboard = () => {
                 <div class="drawer-side">
                     <label for="dashboard-sidebar" class="drawer-overlay"></label>
                     <ul class="menu p-4 overflow-y-auto w-52 bg-base-100 text-base-content">
-                        {/* <!-- Sidebar content here --> */}
+                        
                         <li><NavLink to="/dashboard">My Profile</NavLink></li>
                        {!admin &&<> 
                            <li><NavLink to="/dashboard/myOrders">My Orders</NavLink></li>
@@ -37,12 +36,6 @@ const Dashboard = () => {
                             <li><NavLink to="/dashboard/manageProducts">Manage Products</NavLink></li>
                         </>
                         }
-
-                        {/* {admin && <>
-                        <li><NavLink to="/dashboard/users">All Users</NavLink></li>
-                        <li><NavLink to="/dashboard/addDoctor">Add a Doctor</NavLink></li>
-                        <li><NavLink to="/dashboard/manageDoctor">Manage Doctors</NavLink></li>
-                    </>} */}
                     </ul>
 
                 </div>

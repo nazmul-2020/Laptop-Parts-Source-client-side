@@ -26,7 +26,7 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/purchase" element={<RequireAuth><Purchase></Purchase></RequireAuth>}></Route>
+        <Route path="/purchase/:id" element={<RequireAuth><Purchase></Purchase></RequireAuth>}></Route>
         <Route path="/dashboard" element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}>
           <Route index element={<MyProfile></MyProfile>}></Route>
         <Route path="myOrders" element={<MyOrders></MyOrders>}></Route>
