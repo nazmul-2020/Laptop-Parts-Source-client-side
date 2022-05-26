@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import useToken from '../../../hooks/useToken';
 
 const Login = () => {
     const emailRef = useRef('')
@@ -15,6 +16,7 @@ const Login = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const from = location.state?.from?.pathname || "/";
+    let errorElement;
 
     const [
         signInWithEmailAndPassword,
@@ -24,6 +26,7 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
 
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+    const [token] = useToken(user);
 
     if (loading || sending) {
         return <Loading></Loading>
@@ -32,8 +35,8 @@ const Login = () => {
     if (user) {
         navigate(from, { replace: true })
     }
-
-    let errorElement;
+    
+    
     if (error) {
         errorElement = <p className='text-danger'>Error: {error?.message}</p>
     }

@@ -1,6 +1,7 @@
 import React from 'react';
 // import { useAuthState } from 'react-firebase-hooks/auth';
 import { NavLink, Outlet } from 'react-router-dom';
+import Footer from '../Shared/Footer';
 // import auth from '../../firebase.init';
 // import useAdmin from '../../hooks/uesAdmin';
 
@@ -9,6 +10,7 @@ const Dashboard = () => {
     // const [admin] = useAdmin(user);
 
     return (
+        <div>
         <div class="drawer drawer-mobile">
             <input id="dashboard-sidebar" type="checkbox" class="drawer-toggle" />
             <div class="drawer-content">
@@ -36,6 +38,8 @@ const Dashboard = () => {
                 </ul>
 
             </div>
+        </div>
+            <Footer></Footer>
         </div>
     );
 };

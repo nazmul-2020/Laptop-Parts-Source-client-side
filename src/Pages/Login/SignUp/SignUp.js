@@ -5,28 +5,31 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import Loading from '../../Shared/Loading';
+import useToken from '../../../hooks/useToken';
 
 
 const SignUp = () => {
     const navigate = useNavigate();
+
+
     const [
         createUserWithEmailAndPassword,
         user,
         loading,
         error,
-      ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
-
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+    const [token] = useToken(user)
 
     const handelLogin = () => {
         navigate('/login')
     }
 
-    if (loading ) {
+    if (loading) {
         return <Loading></Loading>
     }
 
-    if(user){
-        navigate('/')
+    if (user) {
+        navigate('/');
     }
 
     const handelSignUp = event => {
@@ -56,9 +59,9 @@ const SignUp = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" name='password' placeholder="Password" required />
                 </Form.Group>
-                
+
                 <Button className='w-75 mx-auto d-block' variant="primary" type="submit">
-                   Sign Up
+                    Sign Up
                 </Button>
                 <p className='pt-2 mb-0'>Already have an account?<Link to='/login' className='text-info text-decoration-none font-weight-bold' onClick={handelLogin}> Please Login</Link></p>
                 <SocialLogin></SocialLogin>
