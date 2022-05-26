@@ -1,7 +1,9 @@
 import React from 'react';
+import Footer from '../Shared/Footer';
 
 const MyPortfolio = () => {
     return (
+        <div className=''>
         <div className='container my-3'>
             <h3 className='text-center text-4xl  '>My Portfolio</h3>
             <div className=' row g-5 my-5   shadow rounded'>
@@ -24,6 +26,8 @@ const MyPortfolio = () => {
                     <li>https://dentalcare-fdc83.web.app/</li>
                 </div>
             </div>
+        </div>
+            <Footer></Footer>
         </div>
     );
 };
