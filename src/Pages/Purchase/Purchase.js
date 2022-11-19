@@ -11,7 +11,8 @@ const Purchase = () => {
     const { register, handleSubmit, reset } = useForm();
     const { id } = useParams();
     const [product] = useBuyDetails(id);
-    const [user] = useAuthState(auth)
+    // console.log(product)
+    const [user] = useAuthState(auth);
     const { _id } = product;
 
     // const onSubmit = data => {
@@ -57,14 +58,7 @@ const Purchase = () => {
                     event.target.reset()
                 }
             })
-
-
-
     }
-
-
-
-
 
     return (
         <div className='m-5  mx-auto p-4 shadow-lg form-container '>
@@ -78,7 +72,7 @@ const Purchase = () => {
                     <Form.Control type="email"disabled value={user?.email} {...register("email", { required: true })} placeholder="Email address" required />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="">
-                    <Form.Control type="number" {...register("price", { required: true })} placeholder="Price" required />
+                    <Form.Control type="number"defaultValue={product.price} {...register("price",  { required: true })} placeholder="Price" required />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="">

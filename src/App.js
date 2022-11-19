@@ -26,10 +26,18 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/purchase/:id" element={<RequireAuth><Purchase></Purchase></RequireAuth>}></Route>
-        <Route path="/dashboard" element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}>
+        <Route path="/purchase/:id" element={
+          <RequireAuth>
+            <Purchase />
+          </RequireAuth>}>
+        </Route>
+        <Route path="/dashboard" element={
+          <RequireAuth>
+            <Dashboard />
+          </RequireAuth>}>
+            
           <Route index element={<MyProfile></MyProfile>}></Route>
-        <Route path="myOrders" element={<MyOrders></MyOrders>}></Route>
+          <Route path="myOrders" element={<MyOrders></MyOrders>}></Route>
           <Route path="addReview" element={<AddReview></AddReview>}></Route>
           <Route path="manageOrder" element={<ManageOrder></ManageOrder>}></Route>
           <Route path="addProduct" element={<AddProduct></AddProduct>}></Route>

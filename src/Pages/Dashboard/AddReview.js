@@ -8,7 +8,7 @@ const AddReview = () => {
 
     const onSubmit = data => {
         console.log(data)
-        const url = `https://intense-earth-81870.herokuapp.com/reviews`;
+        const url = `http://localhost:5000/reviews`;
         fetch(url, {
             method: 'POST',
             headers: {
