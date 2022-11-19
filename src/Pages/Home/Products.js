@@ -4,7 +4,7 @@ import ProductsInfo from './ProductsInfo';
 const Products = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('https://damp-falls-64903.herokuapp.com/products')
+        fetch('https://intense-earth-81870.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProducts(data))
         }, [])

@@ -5,7 +5,7 @@ const useBuyDetails = id =>{
     const [product, setProducts] = useState({})
 
     useEffect ( () =>{
-        const url = `https://damp-falls-64903.herokuapp.com/products/${id}`;
+        const url = `https://intense-earth-81870.herokuapp.com/products/${id}`;
         fetch(url)
         .then(res => res.json())
         .then(data =>setProducts(data))

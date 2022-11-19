@@ -5,7 +5,7 @@ import AdminRow from './AdminRow';
 
 const MakeAdmin = () => {
 
-    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://damp-falls-64903.herokuapp.com/user').then(res => res.json()))
+    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://intense-earth-81870.herokuapp.com/user').then(res => res.json()))
     if (isLoading) {
         return <Loading />
     }

@@ -43,7 +43,7 @@ const Purchase = () => {
         }
 
 
-        fetch('https://damp-falls-64903.herokuapp.com/order', {
+        fetch('https://intense-earth-81870.herokuapp.com/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
