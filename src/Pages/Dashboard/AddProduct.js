@@ -8,7 +8,7 @@ const AddProduct = () => {
 
     const onSubmit = data => {
         console.log(data)
-        const url = `http://localhost:5000/products`;
+        const url = `https://damp-falls-64903.herokuapp.com/products`;
         fetch(url, {
             method: 'POST',
             headers: {
