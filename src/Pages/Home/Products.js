@@ -7,6 +7,8 @@ const Products = () => {
     useEffect(() => {
         fetch('https://intense-earth-81870.herokuapp.com/products')
             .then(res => res.json())
+
+            
             .then(data => setProducts(data))
         }, [])
         
