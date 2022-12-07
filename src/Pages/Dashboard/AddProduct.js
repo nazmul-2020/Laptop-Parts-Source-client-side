@@ -21,9 +21,7 @@ const AddProduct = () => {
                 console.log(result);
                 reset();
                 toast.success(' successfully!!!');
-
             })
-
     };
 
     return (

@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 import useBuyDetails from '../../hooks/useBuyDetails';
+import Footer from '../Shared/Footer';
 
 const Purchase = () => {
     const { register, handleSubmit, reset } = useForm();
@@ -13,6 +14,8 @@ const Purchase = () => {
     const [product] = useBuyDetails(id);
     // console.log(product)
     const [user] = useAuthState(auth);
+    console.log(user.displayName)
+
     const { _id } = product;
 
     // const onSubmit = data => {
@@ -27,7 +30,6 @@ const Purchase = () => {
             // tool: name,
             name: user.displayName,
             email: user.email,
-            
             address: event.target.address.value,
             phone: event.target.phone.value,
             quantity: event.target.quantity.value,
@@ -61,6 +63,7 @@ const Purchase = () => {
     }
 
     return (
+        <div>
         <div className='m-5  mx-auto p-4 shadow-lg form-container '>
             <h3 className='text-center text-2xl mb-2 '> Please Add Product</h3>
             <Form onSubmit={handleOrderSubmit}>
@@ -89,6 +92,9 @@ const Purchase = () => {
                 </Button>
 
             </Form>
+
+        </div>
+            <Footer></Footer>
         </div>
     );
 };
