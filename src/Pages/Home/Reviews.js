@@ -5,7 +5,7 @@ const Reviews = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('https://intense-earth-81870.herokuapp.com/reviews')
+        fetch('https://laptop-parts-source-server-side.up.railway.app/reviews')
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])

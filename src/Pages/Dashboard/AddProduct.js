@@ -8,7 +8,7 @@ const AddProduct = () => {
 
     const onSubmit = data => {
         console.log(data)
-        const url = `https://intense-earth-81870.herokuapp.com/products`;
+        const url = `https://laptop-parts-source-server-side.up.railway.app/products`;
         fetch(url, {
             method: 'POST',
             headers: {

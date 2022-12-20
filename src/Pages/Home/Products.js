@@ -5,10 +5,8 @@ import ProductsInfo from './ProductsInfo';
 const Products = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('https://intense-earth-81870.herokuapp.com/products')
+        fetch('https://laptop-parts-source-server-side.up.railway.app/products')
             .then(res => res.json())
-
-            
             .then(data => setProducts(data))
         }, [])
         
@@ -26,7 +24,6 @@ const Products = () => {
              
                 }
             </div>
-            
         </div>
     );
 };

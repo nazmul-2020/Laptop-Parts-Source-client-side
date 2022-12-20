@@ -45,7 +45,7 @@ const Purchase = () => {
         }
 
 
-        fetch('https://intense-earth-81870.herokuapp.com/order', {
+        fetch('https://laptop-parts-source-server-side.up.railway.app/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
