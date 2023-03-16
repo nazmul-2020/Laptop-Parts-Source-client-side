@@ -7,7 +7,7 @@ const useAdmin = user => {
     useEffect(() => {
         const email = user?.email;
         if (email) {
-            fetch(`https://laptop-parts-source-server-side.up.railway.app/admin/${email}`, {
+            fetch(`https://laptop-parts-source-server-side.onrender.com/admin/${email}`, {
 
                 method: 'GET',
                 headers: {

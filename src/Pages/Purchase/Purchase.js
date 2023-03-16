@@ -45,7 +45,7 @@ const Purchase = () => {
         }
 
 
-        fetch('https://laptop-parts-source-server-side.up.railway.app/order', {
+        fetch('https://laptop-parts-source-server-side.onrender.com/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

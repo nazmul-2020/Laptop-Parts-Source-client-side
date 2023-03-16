@@ -8,7 +8,7 @@ const AddProduct = () => {
 
     const onSubmit = data => {
         console.log(data)
-        const url = `https://laptop-parts-source-server-side.up.railway.app/products`;
+        const url = `https://laptop-parts-source-server-side.onrender.com/products`;
         fetch(url, {
             method: 'POST',
             headers: {

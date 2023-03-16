@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const AdminRow = ({ user, index, refetch }) => {
     const { email, role } = user;
     const makeAdmin = () => {
-        fetch(`https://laptop-parts-source-server-side.up.railway.app/user/admin/${email}`, {
+        fetch(`https://laptop-parts-source-server-side.onrender.com/user/admin/${email}`, {
             method: 'PUT',
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',

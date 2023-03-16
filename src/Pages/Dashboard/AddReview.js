@@ -8,7 +8,7 @@ const AddReview = () => {
 
     const onSubmit = data => {
         console.log(data)
-        const url = `https://laptop-parts-source-server-side.up.railway.app/reviews`;
+        const url = `https://laptop-parts-source-server-side.onrender.com/reviews`;
         fetch(url, {
             method: 'POST',
             headers: {

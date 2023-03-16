@@ -5,7 +5,7 @@ import AdminRow from './AdminRow';
 
 const MakeAdmin = () => {
 
-    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://laptop-parts-source-server-side.up.railway.app/user').then(res => res.json()))
+    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://laptop-parts-source-server-side.onrender.com/user').then(res => res.json()))
     if (isLoading) {
         return <Loading />
     }

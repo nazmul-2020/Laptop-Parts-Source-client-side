@@ -5,7 +5,7 @@ import ProductsInfo from './ProductsInfo';
 const Products = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('https://laptop-parts-source-server-side.up.railway.app/products')
+        fetch('https://laptop-parts-source-server-side.onrender.com/products')
             .then(res => res.json())
             .then(data => setProducts(data))
         }, [])

@@ -5,7 +5,7 @@ const Reviews = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('https://laptop-parts-source-server-side.up.railway.app/reviews')
+        fetch('https://laptop-parts-source-server-side.onrender.com/reviews')
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])
